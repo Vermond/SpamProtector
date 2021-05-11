@@ -1,13 +1,6 @@
-//
-//  CallTableCell.swift
-//  test
-//
-//  Created by Jinsu Gu on 2021/05/10.
-//
-
 import UIKit
 
-class CallTableCell: UITableViewCell {
+class SearchTableCell: UITableViewCell, ClassName {
     
     override func awakeFromNib() {
         super.awakeFromNib()

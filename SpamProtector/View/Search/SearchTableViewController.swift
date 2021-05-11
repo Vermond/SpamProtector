@@ -1,13 +1,6 @@
-//
-//  CallTableViewController.swift
-//  test
-//
-//  Created by Jinsu Gu on 2021/05/10.
-//
-
 import UIKit
 
-class CallTableViewController: UIViewController {
+class SearchTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,18 +8,16 @@ class CallTableViewController: UIViewController {
 }
 
 
-extension CallTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension SearchTableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CallTableCell", for: indexPath) as? CallTableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableCell.className, for: indexPath) as? SearchTableCell else {
             return UITableViewCell()
         }
         return cell
     }
-    
-    
 }

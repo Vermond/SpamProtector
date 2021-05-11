@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		57C38A132648C30800E8CB19 /* CallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C38A122648C30800E8CB19 /* CallTableViewController.swift */; };
 		57C38A152648C3F600E8CB19 /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C38A142648C3F600E8CB19 /* CallTableCell.swift */; };
+		57C38A1A264A613A00E8CB19 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C38A19264A5F2B00E8CB19 /* SearchTableViewController.swift */; };
+		57C38A1B264A613D00E8CB19 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C38A18264A5F1200E8CB19 /* SearchTableCell.swift */; };
+		57C38A1E264A69B800E8CB19 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C38A1D264A69B800E8CB19 /* ClassName.swift */; };
+		57C38A21264A6F9200E8CB19 /* ExtendedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C38A20264A6F9200E8CB19 /* ExtendedSwitch.swift */; };
+		57C38A23264A6FA000E8CB19 /* ExtendedSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C38A22264A6FA000E8CB19 /* ExtendedSwitch.xib */; };
 		57C6C509263BDB22000DF354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6C508263BDB22000DF354 /* AppDelegate.swift */; };
 		57C6C50B263BDB22000DF354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6C50A263BDB22000DF354 /* SceneDelegate.swift */; };
 		57C6C50D263BDB22000DF354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6C50C263BDB22000DF354 /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 /* Begin PBXFileReference section */
 		57C38A122648C30800E8CB19 /* CallTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewController.swift; sourceTree = "<group>"; };
 		57C38A142648C3F600E8CB19 /* CallTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
+		57C38A18264A5F1200E8CB19 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010SearchTableCell.swift"; sourceTree = "<group>"; };
+		57C38A19264A5F2B00E8CB19 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		57C38A1D264A69B800E8CB19 /* ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
+		57C38A20264A6F9200E8CB19 /* ExtendedSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedSwitch.swift; sourceTree = "<group>"; };
+		57C38A22264A6FA000E8CB19 /* ExtendedSwitch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtendedSwitch.xib; sourceTree = "<group>"; };
 		57C6C505263BDB22000DF354 /* SpamProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C6C508263BDB22000DF354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C6C50A263BDB22000DF354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,10 +54,46 @@
 		57C38A112648C2DD00E8CB19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				57C6C50E263BDB22000DF354 /* Main.storyboard */,
+				57C38A17264A5F0000E8CB19 /* Search */,
+				57C38A16264A5EEB00E8CB19 /* CallHistory */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57C38A16264A5EEB00E8CB19 /* CallHistory */ = {
+			isa = PBXGroup;
+			children = (
 				57C38A122648C30800E8CB19 /* CallTableViewController.swift */,
 				57C38A142648C3F600E8CB19 /* CallTableCell.swift */,
 			);
-			path = View;
+			path = CallHistory;
+			sourceTree = "<group>";
+		};
+		57C38A17264A5F0000E8CB19 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				57C38A19264A5F2B00E8CB19 /* SearchTableViewController.swift */,
+				57C38A18264A5F1200E8CB19 /* SearchTableCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		57C38A1C264A699B00E8CB19 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57C38A1D264A69B800E8CB19 /* ClassName.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		57C38A1F264A6F6700E8CB19 /* ViewItem */ = {
+			isa = PBXGroup;
+			children = (
+				57C38A20264A6F9200E8CB19 /* ExtendedSwitch.swift */,
+				57C38A22264A6FA000E8CB19 /* ExtendedSwitch.xib */,
+			);
+			path = ViewItem;
 			sourceTree = "<group>";
 		};
 		57C6C4FC263BDB22000DF354 = {
@@ -69,11 +115,12 @@
 		57C6C507263BDB22000DF354 /* SpamProtector */ = {
 			isa = PBXGroup;
 			children = (
+				57C38A1F264A6F6700E8CB19 /* ViewItem */,
+				57C38A1C264A699B00E8CB19 /* Extension */,
 				57C38A112648C2DD00E8CB19 /* View */,
 				57C6C508263BDB22000DF354 /* AppDelegate.swift */,
 				57C6C50A263BDB22000DF354 /* SceneDelegate.swift */,
 				57C6C50C263BDB22000DF354 /* ViewController.swift */,
-				57C6C50E263BDB22000DF354 /* Main.storyboard */,
 				57C6C511263BDB2D000DF354 /* Assets.xcassets */,
 				57C6C513263BDB2D000DF354 /* LaunchScreen.storyboard */,
 				57C6C516263BDB2D000DF354 /* Info.plist */,
@@ -138,8 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C6C515263BDB2D000DF354 /* LaunchScreen.storyboard in Resources */,
+				57C38A23264A6FA000E8CB19 /* ExtendedSwitch.xib in Resources */,
 				57C6C512263BDB2D000DF354 /* Assets.xcassets in Resources */,
+				57C6C515263BDB2D000DF354 /* LaunchScreen.storyboard in Resources */,
 				57C6C510263BDB22000DF354 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C38A21264A6F9200E8CB19 /* ExtendedSwitch.swift in Sources */,
 				57C6C50D263BDB22000DF354 /* ViewController.swift in Sources */,
+				57C38A1E264A69B800E8CB19 /* ClassName.swift in Sources */,
+				57C38A1B264A613D00E8CB19 /* SearchTableCell.swift in Sources */,
+				57C38A1A264A613A00E8CB19 /* SearchTableViewController.swift in Sources */,
 				57C6C509263BDB22000DF354 /* AppDelegate.swift in Sources */,
 				57C6C50B263BDB22000DF354 /* SceneDelegate.swift in Sources */,
 				57C38A132648C30800E8CB19 /* CallTableViewController.swift in Sources */,
