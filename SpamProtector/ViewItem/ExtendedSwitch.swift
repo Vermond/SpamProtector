@@ -12,6 +12,12 @@ class ExtendedSwitch : UIView, ClassName {
     
     @IBOutlet weak var tt: UILabel!
     
+    @IBInspectable var color:UIColor = UIColor.green {
+        didSet {
+            tt.backgroundColor = color
+        }
+    }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         loadView()
@@ -22,11 +28,14 @@ class ExtendedSwitch : UIView, ClassName {
         loadView()
     }
     
+    override func prepareForInterfaceBuilder() {
+        loadView()
+    }
+    
     private func loadView() {
         
-        
-        let nib = UINib(nibName: "ExtendedSwitch", bundle: Bundle.main)
-        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
+        let bundle = Bundle(for: Self.self)
+        guard let view = bundle.loadNibNamed(className, owner: self, options: nil)?.first as? UIView else {
             return
         }
         
