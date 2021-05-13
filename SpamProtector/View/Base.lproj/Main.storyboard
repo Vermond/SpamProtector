@@ -138,7 +138,7 @@
                     <connections>
                         <segue destination="vVG-wS-ErF" kind="relationship" relationship="viewControllers" id="zak-mp-4Xo"/>
                         <segue destination="4iB-8c-3Jn" kind="relationship" relationship="viewControllers" id="cx2-Cl-Dd8"/>
-                        <segue destination="hwZ-QD-7Ye" kind="relationship" relationship="viewControllers" id="jvV-xL-3Pq"/>
+                        <segue destination="UXE-qG-1fe" kind="relationship" relationship="viewControllers" id="hdP-cM-vwY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08L-i7-k6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -291,46 +291,15 @@
             </objects>
             <point key="canvasLocation" x="2756.521739130435" y="91.741071428571431"/>
         </scene>
-        <!--Option-->
-        <scene sceneID="aJs-UH-j74">
+        <!--Other-->
+        <scene sceneID="dzs-gj-NTr">
             <objects>
-                <viewController title="Option" id="hwZ-QD-7Ye" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e3i-M4-YtF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자동 업데이트 오프라인 DB 사용 여부 알림 사용 여부 차단  테마 실시간 조회 라이센스 정보 웹사이트 정보 게시판 링크" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-nA-1IW">
-                                <rect key="frame" x="77" y="369" width="240" height="339"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기타" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-a2-MHx">
-                                <rect key="frame" x="190" y="44" width="35" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xun-1Q-sNS" customClass="ExtendedSwitch" customModule="SpamProtector" customModuleProvider="target">
-                                <rect key="frame" x="77" y="136" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qz-rg-dRh">
-                                <rect key="frame" x="237" y="708" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2jl-cu-z6y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="기타" id="Npe-9f-2F3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K5I-Kg-YB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Other" id="UXE-qG-1fe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OWh-4J-MQS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7G-Cn-gp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2756.521739130435" y="896.65178571428567"/>
+            <point key="canvasLocation" x="1796" y="516"/>
         </scene>
     </scenes>
     <resources>
