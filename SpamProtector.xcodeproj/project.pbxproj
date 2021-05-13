@@ -62,13 +62,29 @@
 			path = ExtendedSwitch;
 			sourceTree = "<group>";
 		};
-		57C38A112648C2DD00E8CB19 /* View */ = {
+		57880A55264CC1C600C6808F /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				57C6C50E263BDB22000DF354 /* Main.storyboard */,
 				57C38A17264A5F0000E8CB19 /* Search */,
 				57C38A16264A5EEB00E8CB19 /* CallHistory */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		57880A56264CC1D200C6808F /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				57880A52264B953700C6808F /* Other.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		57C38A112648C2DD00E8CB19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57880A56264CC1D200C6808F /* Other */,
+				57880A55264CC1C600C6808F /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
